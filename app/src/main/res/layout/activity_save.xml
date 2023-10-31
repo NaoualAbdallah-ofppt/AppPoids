@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAccueil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Enregistrement mesure"
+
+                style="@style/titre"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="162dp"
+            android:layout_height="3dp"
+            android:orientation="horizontal"
+            android:background="@color/jaune"
+            android:layout_marginBottom="40dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votre poids "
+                android:textColor="@color/bleu"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/txtPoids"
+                android:layout_width="0dp"
+                android:textColor="@color/bleu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEnregistrer"
+                android:layout_height="wrap_content"
+                android:layout_width="162dp"
+                android:text="Enregistrer"
+                style="@style/btnStyle"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:orientation="horizontal"
+            android:background="@color/jaune"
+            android:layout_marginBottom="40dp"></LinearLayout>
+
+        <Button
+            android:id="@+id/btnQuitter"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Retour"
+            style="@style/btnStyle"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
